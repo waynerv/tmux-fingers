@@ -53,8 +53,6 @@ module Fingers
         match: state.result,
         original_pane: original_pane
       ).run
-
-      tmux.display_message("Copied: #{state.result}", 1000) unless state.result.empty?
     end
 
     private def hide_cursor
@@ -71,7 +69,6 @@ module Fingers
       match = hinter.lookup(state.input)
 
       handle_match(match) if match
-      tmux.display_message(state.input, 300)
     end
 
     private def process_multimode

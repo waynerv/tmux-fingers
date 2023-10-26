@@ -109,12 +109,11 @@ class Fingers::Commands::LoadConfig < Fingers::Commands::Base
 
     fingers_mode_bind("Space", "fzf")
     fingers_mode_bind("C-c", "exit")
-    fingers_mode_bind("q", "exit")
     fingers_mode_bind("Escape", "exit")
 
     fingers_mode_bind("?", "toggle-help")
 
-    fingers_mode_bind("Enter", "noop")
+    fingers_mode_bind("Enter", "exit")
     fingers_mode_bind("Tab", "toggle-multi-mode")
 
     fingers_mode_bind("Any", "noop")
